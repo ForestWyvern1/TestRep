@@ -39,9 +39,7 @@ class SignActivity : AppCompatActivity() {
             loginIn()
         }
 
-        changeButton.setOnClickListener {
-            change()
-        }
+
 
     }
 
@@ -53,12 +51,10 @@ class SignActivity : AppCompatActivity() {
 
     public fun change() {
         if (checkchange == 0) {
-            changeButton.text = "Log in"
             sign.visibility = View.GONE
             login.visibility = View.VISIBLE
             checkchange = 1
         } else if (checkchange == 1) {
-            changeButton.text = "Sign in"
             sign.visibility = View.VISIBLE
             login.visibility = View.GONE
             checkchange = 0
